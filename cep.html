@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recebimento de CEP</title>
-    <style>
-        label[for="cep"] {
-            color: red;
-        }
-    </style>
-</head>
-<body>
-    <h1>Recebimento de CEP</h1>
-    <form action="processa_cep.php" method="post">
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" required>
-        <input type="submit" value="Enviar">
+<!DOCTYPE html
+<html>
+  <head>
+    <meta charset="UTF-8" />    <title>CEP Lookup</title>  </head>
+ <body>
+    <h1>CEP Lookup</h1>
+    <form method="get" action="/cep-lookup">
+      <label for="cep">Enter CEP:</label>
+      <input type="text" id="cep" name="cep" required />
+      <button type="submit">Lookup</button>
     </form>
-</body>
+  </body>
 </html>
